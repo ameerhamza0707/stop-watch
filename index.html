@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .java{
+            color: yellow;
+            font-weight: bold;
+        }
+        .stopwatch{
+            color: white;
+            font-weight: bold;
+        }
+        h1{
+            display: inline-block;
+        }
+        
+        .display{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            width: 300px;
+            border-radius: 15px;
+        }
+        .buttons{
+            width: 300px;   
+        }
+        button{
+            width: 80px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 7px;
+            border: none;
+        }
+        .button1{
+            background-color: greenyellow;
+            color: white;
+            font-weight: bold;
+        }
+        .button2{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        .button3{
+            background-color: rgb(52, 111, 237);
+            color: white;
+            font-weight: bold;
+        }
+        button:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+        
+    </style>
+</head>
+
+<body>
+<center>
+    <div>
+        <h2>Select Background You Like!</h2>
+        <button onclick="red()">RED</button>
+        <button onclick="blue()">BLUE</button>
+        <button onclick="yellow()">YELLOW</button>
+        <button onclick="green()">GREEN</button>
+        <button onclick="orange()">ORANGE</button>
+        <button onclick="pink()">PINK</button>
+        <button onclick="Reset()">RESET</button>
+    </div>
+</center>
+
+<hr>
+<center>
+    <h1 class="stopwatch">STOPWATCH</h1>
+
+        <div class="display">
+    
+            <h1 id="min">00</h1> &nbsp; : &nbsp;
+            <h1 id="sec">00</h1> &nbsp; : &nbsp;
+            <h1 id="msec">00</h1>
+        </div>
+    
+
+        <br>
+
+        <div class="buttons">
+            
+            <button class="button2" onclick="pause()">STOP</button>
+            <button class="button1" id="btn" onclick="start()">START</button>
+            <button class="button3" onclick="reset()">RESET</button>
+        </div>
+    </center>
+<hr>
+<CENTer>
+<div>
+    <h1>CALCULATOR</h1><br>
+    <div id="calculator">
+        <input style="width: 250px; height: 25px; border-radius: 7px;" type="text" id="input">
+        <br>
+        <br>
+        <button onclick="btn('7')">7</button>
+        <button onclick="btn('8')">8</button>
+        <button onclick="btn('9')">9</button>
+        <button onclick="btn('-')">-</button>
+        <br>
+        <button onclick="btn('4')">4</button>
+        <button onclick="btn('5')">5</button>
+        <button onclick="btn('6')">6</button>
+        <button onclick="btn('+')">+</button>
+        <br>
+        <button onclick="btn('1')">1</button>
+        <button onclick="btn('2')">2</button>
+        <button onclick="btn('3')">3</button>
+        <button onclick="btn('*')">*</button>
+        <br>
+        <button onclick="btn('0')">0</button>
+        <button onclick="clearResult()">CLEAR</button>
+        <button onclick="btn('/')">/</button>
+        <button onclick="calculate()">=</button>
+    </div>
+
+
+</div>
+</CENTer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
